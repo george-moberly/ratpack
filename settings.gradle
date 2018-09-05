@@ -17,7 +17,7 @@
 include \
     "ratpack-core",
     "ratpack-manual",
-    "ratpack-site",
+/*    "ratpack-site", */
     "ratpack-test",
     "ratpack-test-internal",
     "ratpack-groovy",
