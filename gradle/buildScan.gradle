@@ -26,7 +26,7 @@ buildScan {
   }
 
   if (commitId) {
-    link "Source", "https://github.com/ratpack/ratpack/tree/" + commitId
+    //link "Source", "https://github.com/ratpack/ratpack/tree/" + commitId
   }
 }
 
