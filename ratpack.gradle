@@ -214,3 +214,6 @@ task sanityCheck { t ->
     dependsOn it.tasks.withType(Checkstyle)
   }
 }
+
+apply from: "$rootDir/customData.gradle"
+
