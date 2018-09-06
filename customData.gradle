@@ -9,7 +9,7 @@ def FORUM_PARAMS = '%22&body=put%20your%20build%20scan%20url%20here!&category=He
 if (System.getenv('BUILD_NUMBER')) {
     buildScan.tag 'CI'
     buildScan.tag 'JENKINS'
-    buildScan.link 'Jenkins Build', System.getenv('JENKINS_URL')
+    buildScan.link 'Jenkins Build', System.getenv('BUILD_URL')
 } else {
     buildScan.tag 'DEV'
 }
