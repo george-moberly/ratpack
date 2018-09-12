@@ -17,7 +17,7 @@
 include \
     "ratpack-core",
     "ratpack-manual",
-/*    "ratpack-site", */
+ /*   "ratpack-site", */
     "ratpack-test",
     "ratpack-test-internal",
     "ratpack-groovy",
@@ -63,3 +63,15 @@ def setBuildFile(project) {
 }
 
 setBuildFile(rootProject)
+
+buildCache {
+  local {
+    enabled = true
+  }
+  remote(HttpBuildCache) {
+    push = true
+    //url = "https://enterprise-training.gradle.com/cache/"
+    url = "https://ge.georgemoberly.net/cache/"
+  }
+}
+
